@@ -28,6 +28,11 @@ spec:
                 secretKeyRef:
                   name: aws-credentials
                   key: AWS_SECRET_ACCESS_KEY
+            - name: SMTP_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: SMTP_PASSWORD
 
 
 ---
